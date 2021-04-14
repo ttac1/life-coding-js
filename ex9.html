@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x46"
+      href="icon_emerald.jpg"
+    />
+    <link rel="stylesheet" href="ex1.css" />
+    <title>JavaScript!</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="생활코딩 수업 연습" />
+  </head>
+
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two() {
+          document.write("<li>2-1</li>");
+          document.write("<li>2-2</li>");
+        }
+        document.write("<li>1</li>");
+        two();
+        document.write("<li>3</li>");
+        two();
+      </script>
+    </ul>
+    <h2>Parameter&Argument</h2>
+    <p>
+      //아래 function sum(left, right)에서 left, right는 Parameter sum(2, 3); 의
+      2,3은 argument 라고 한다.//
+    </p>
+    <script>
+      function onePlusOne() {
+        document.write(1 + 1 + "<br>");
+      }
+      onePlusOne();
+
+      function sum(left, right) {
+        document.write(left + right + "<br>");
+      }
+      function sumColorRed(left, right) {
+        document.write('<div style="color:red">' + left + right + "</div><br>");
+      }
+      sum(2, 3);
+      sumColorRed(2, 3);
+      sumColorRed(3, 4);
+    </script>
+    <h2>Return</h2>
+    <script>
+      function sumTwo(left, right) {
+        return left + right;
+      }
+      document.write(sumTwo(2, 3) + "<br>");
+      document.write('<div style="color:red;">' + sumTwo(2, 3) + "</div>");
+      document.write('<div style="font-size:3rem;">' + sumTwo(2, 3) + "</div>");
+    </script>
+  </body>
+</html>

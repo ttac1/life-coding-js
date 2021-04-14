@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x46"
+      href="icon_emerald.jpg"
+    />
+    <link rel="stylesheet" href="ex1.css" />
+    <title>Array</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="생활코딩 수업 연습" />
+  </head>
+  <body>
+    <h1>Loop</h1>
+    <p>
+      리스트 중에 2,3 항목만 반복할 때 while (true)면 아래 중괄호에 있는 것
+      실행. 그것만 해주면 영원히 반복되니까, i값이 3보다 작을때만 실행 한번
+      실행할때마다 +1을 해주어서 세번 반복하고 나면 다음으로 넘어감
+    </p>
+    <ul>
+      <script>
+        document.write("<li>1</li>");
+        var i = 0;
+        while (i < 3) {
+          document.write("<li>2</li>");
+          document.write("<li>3</li>");
+          i = i + 1;
+        }
+        document.write("<li>4</li>");
+        document.write("<li>5</li>");
+      </script>
+    </ul>
+  </body>
+</html>
